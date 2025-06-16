@@ -1,0 +1,8 @@
+Dashboard/Home
+Menu
+About Us (Kuya Randy)
+Reservation
+
+Search
+Cart (Enhancement)
+Coupon
