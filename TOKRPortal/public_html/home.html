@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TakeOff-Home</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <!-- Favicon and Touch Icons -->
+    <link rel="icon" href="assets/images/ico/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/ico/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/ico/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="assets/images/ico/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/ico/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/ico/android-chrome-512x512.png" />
+    <link rel="stylesheet" href="assets/css/styler.css" />
+</head>
+<body>
+    <!-- Background Decorations -->
+    <div class="bg-decoration leaf-1">🌿</div>
+    <div class="bg-decoration leaf-2">🌿</div>
+    <div class="bg-decoration tomato-1">🍅</div>
+    <div class="bg-decoration onion-1">🧅</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+              <img src="assets/images/logo.png" class="mb-2" width="32"/>
+              TakeOff
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="breakfast.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-search me-3 text-muted"></i>
+                    <!-- <button class="btn btn-primary btn-login">Log in</button> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container pt-4">
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-6">
+                    <div class="hero-subtitle">Welcome to</div>
+                    <h1 class="hero-title"><span class="logotext">TakeOff</span><span style="color: var(--primary-color);"> by Kuya Randy</span></h1>
+                    <p class="hero-description">
+                        <span class="fw-bold">Authentic Pinoy Breakfast, Kah-pahm-PAH-gahn homecooking at its best.</span> Enjoy SiLog favorites made with love, tradition, and fresh ingredients just like home.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-reserve">
+                            <i class="bi bi-calendar-check me-2"></i>Reserve a Table
+                        </button>
+                        <button class="btn btn-outline-primary btn-order">
+                            <i class="bi bi-bag me-2"></i>Online Order
+                        </button>
+                    </div>
+                    
+                    <div class="operating-hours">
+                        <i class="bi bi-clock text-warning me-2"></i>
+                        <span><strong>Open:</strong> 6:00am - 11:00pm</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="food-circle">
+                        <div class="circle-border"></div>
+                        <img src="assets/images/silog1.jpg" alt="Authentic Filipino Breakfast" class="food-image">
+                        <div class="best-food-badge">
+                            <i class="bi bi-star-fill me-1"></i>Best Food 😋
+                        </div>
+                        <div class="food-card-mini">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/sisig.jpg" alt="SisigSiLog">
+                                <div class="ms-3">
+                                    <h6 class="mb-1">SisigSiLog</h6>
+                                    <small class="text-muted">Grilled pork with secret seasoning</small>
+                                    <div class="text-warning fw-bold">$16.45</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Dishes Section -->
+    <section class="popular-section" id="menu">
+        <div class="container">
+            <div class="position-relative">
+                <h2 class="section-title">Our Popular <span>SiLog Dishes</span></h2>
+                
+                <button class="nav-arrow prev">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="nav-arrow next">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+                
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="dish-card">
+                            <img src="assets/images/silog1.jpg" alt="SisigSiLog" class="dish-image">
+                            <div class="dish-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                (5.0k)
+                            </div>
+                            <h5 class="dish-name">SisigSiLog</h5>
+                            <div class="dish-price">$16.45</div>
+                            <p class="dish-description">Grilled pork, chicken pate, lemon, onion, secret seasoning served with garlic rice and egg</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="dish-card">
+                            <img src="assets/images/silog2.png" alt="SaliSiLog" class="dish-image">
+                            <div class="dish-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                (5.0k)
+                            </div>
+                            <h5 class="dish-name">SaliSiLog</h5>
+                            <div class="dish-price">$16.45</div>
+                            <p class="dish-description">Beef patties, sauteed garlic, onion, and cream of mushrooms with garlic rice and egg</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="dish-card">
+                            <img src="assets/images/silog3.png" alt="TorSiLog" class="dish-image">
+                            <div class="dish-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                (5.0k)
+                            </div>
+                            <h5 class="dish-name">TorSiLog</h5>
+                            <div class="dish-price">$16.45</div>
+                            <p class="dish-description">Ground pork sauteed in fresh garlic, onions with mixed vegetables and garlic rice</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="dish-card">
+                            <img src="assets/images/silog4.jpg" alt="IsdaSiLog" class="dish-image">
+                            <div class="dish-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                (5.0k)
+                            </div>
+                            <h5 class="dish-name">IsdaSiLog</h5>
+                            <div class="dish-price">$16.45</div>
+                            <p class="dish-description">Fish of the day seasoned with secret spices and pan seared fry with garlic rice</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second Row -->
+                <div class="row mt-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="dish-card">
+                            <img src="assets/images/silog5.jpg" alt="OmSiLog" class="dish-image">
+                            <div class="dish-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                (5.0k)
+                            </div>
+                            <h5 class="dish-name">OmSiLog</h5>
+                            <div class="dish-price">$16.45</div>
+                            <p class="dish-description">Omelet with ground pork and mixed vegetables filling served with garlic rice</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="dish-card">
+                            <img src="assets/images/silog6.jpg" alt="VegSiLog" class="dish-image">
+                            <div class="dish-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                (5.0k)
+                            </div>
+                            <h5 class="dish-name">VegSiLog</h5>
+                            <div class="dish-price">$16.45</div>
+                            <p class="dish-description">Mixed vegetables sauteed in fresh garlic and butter with garlic rice and egg</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="dish-card">
+                            <img src="assets/images/silog7.jpg" alt="ToSiLog" class="dish-image">
+                            <div class="dish-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                (5.0k)
+                            </div>
+                            <h5 class="dish-name">ToSiLog</h5>
+                            <div class="dish-price">$16.45</div>
+                            <p class="dish-description">Homemade marinated cured pork served with fresh garlic rice and egg</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="dish-card" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+                            <div class="text-center">
+                                <i class="bi bi-cup-hot-fill" style="font-size: 3rem; margin: 2rem 0;"></i>
+                                <h5 class="dish-name" style="color: white;">Drinks</h5>
+                                <div class="dish-price" style="color: white;">$2.25</div>
+                                <p class="dish-description" style="color: rgba(255,255,255,0.9);">
+                                    <i class="bi bi-cup-hot me-1"></i>Coffee<br>
+                                    <i class="bi bi-droplet me-1"></i>Fresh Juice<br>
+                                    <i class="bi bi-water me-1"></i>Water
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+        <div class="container text-center text-white">
+            <h2 class="mb-4">Ready to Order?</h2>
+            <p class="mb-4 fs-5">Experience authentic Filipino breakfast delivered to your door or visit our restaurant</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <button class="btn btn-light btn-lg w-100 rounded-pill d-flex align-items-center justify-content-center">
+                        <img src="assets/images/doordash-logo.png" alt="DoorDash" style="width: 24px; height: 24px; margin-right: 8px;">
+                        DoorDash
+                    </button>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <button class="btn btn-light btn-lg w-100 rounded-pill d-flex align-items-center justify-content-center">
+                        <img src="assets/images/ubereats-logo.png" alt="UberEats" style="width: 24px; height: 24px; margin-right: 8px;">
+                        UberEats
+                    </button>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <button class="btn btn-outline-light btn-lg w-100 rounded-pill">
+                        <i class="bi bi-geo-alt me-2"></i>Visit Us
+                    </button>
+                </div>
+            </div>
+            
+            <div class="mt-4">
+                <h5><i class="bi bi-geo-alt-fill me-2"></i>33 Visitacion Ave. Brisbane, CA 94005</h5>
+                <p><i class="bi bi-clock me-2"></i>Open Daily: 6:00am - 11:00pm</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Animate dish cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all dish cards
+        document.querySelectorAll('.dish-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Navigation arrows functionality
+        const dishCards = document.querySelectorAll('.dish-card');
+        let currentIndex = 0;
+        
+        document.querySelector('.nav-arrow.next').addEventListener('click', function() {
+            if (currentIndex < dishCards.length - 4) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+
+        document.querySelector('.nav-arrow.prev').addEventListener('click', function() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        function updateCarousel() {
+            const container = document.querySelector('.row');
+            const cardWidth = dishCards[0].offsetWidth + 30; // including margin
+            container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }
+    </script>
+</body>
+</html>
