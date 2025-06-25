@@ -10,3 +10,9 @@ Login
 Payment
 Reservation (List)
 Cart
+
+
+Comments:
+- Header must be the same to all menus... - not moved
+- Footer must be static
+- No search textbox
