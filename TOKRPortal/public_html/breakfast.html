@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TakeOff-Breakfast</title>
+    <title>TakeOff-Menu</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -21,6 +21,12 @@
     <link rel="stylesheet" href="assets/css/breakfast.css" />
 </head>
 <body>
+    <!-- Background Decorations -->
+    <div class="bg-decoration leaf-1">🌿</div>
+    <div class="bg-decoration leaf-2">🌿</div>
+    <div class="bg-decoration tomato-1">🍅</div>
+    <div class="bg-decoration onion-1">🧅</div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -58,11 +64,22 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Start Your Day with <span class="highlight"><b>alh-moo-SAHL</b></span></h1>
-            <p>Experience the warmth of home with authentic Pinoy breakfast, lovingly prepared the kah-pahm-PAH-gahn way.</p>
-            <div class="price-badge">All meals $16.45</div>
+    <section class="hero-section" id="home">
+        <div class="container pt-4">
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-12">
+                    <div class="hero-subtitle">Start Your Day with</div>
+                    <h1 class="hero-title"><span class="logotext">alh-moo-SAHL</span><span style="color: var(--primary-color);"> (Breakfast)</span></h1>
+                    <p class="hero-description">
+                        Experience the warmth of home with authentic Pinoy breakfast, <span class="fw-bold">lovingly prepared the kah-pahm-PAH-gahn way.</span>
+                    </p>
+                    
+                    <div class="operating-hours">
+                        <i class="bi bi-clock text-warning me-2"></i>
+                        <span><strong>All meals </strong> $16.45</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -240,19 +257,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-brand">&copy; 2025 <strong>TakeOff by Kuya Randy</strong></p>
-            <p class="footer-tagline">Crafted with ❤️ for fans of Authentic Pinoy Breakfast and kah-pahm-PAH-gahn homecooking 🍳🇵🇭</p>
-            <div class="social-links">
-            <a href="tel:+16508922003" title="Call Us">📞</a>
-            <a href="https://m.me/randy.felix.758" target="_blank" title="Message Us on Messenger">💬</a>
-            <a href="https://instagram.com/takeoffbykuyarandy" target="_blank" title="Follow on Instagram">📷</a>
-            </div>
-        </div>
-    </footer>
 
     <script>
         // Category tab functionality

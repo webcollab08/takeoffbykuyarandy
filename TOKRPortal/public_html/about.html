@@ -61,95 +61,78 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>The Heart of TakeOff<span class="highlight"> by Kuya Randy</span></h1>
-                <p>Rooted in tradition, fueled by passion...<br/> We serve Authentic Pinoy Breakfast with the warmth of kah-pahm-PAH-gahn homecooking. <br/> dish is a love letter to Filipino mornings.</p>
+                <h1>About Our Story</h1>
+                <p>Bringing authentic Filipino breakfast traditions to your table</p>
+            </div>
+        </div>
+        <div class="decorative-element leaf1">🌿</div>
+        <div class="decorative-element leaf2">🍃</div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/images/kr.png" alt="TakeOff by Kuya Randy">
+                    <div class="image-overlay">
+                        Kuya Randy
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2>Our Heritage</h2>
+                    <div class="tagline">Authentic Pinoy Breakfast Experience</div>
+                    <p>At Foodie Restaurant, we celebrate the rich culinary heritage of the Philippines through our authentic breakfast offerings. Our name reflects our deep connection to Filipino home cooking traditions.</p>
+                    <p><strong>Kah-pahm-PAH-gahn</strong> represents our commitment to homecooking - the heart of Filipino cuisine where families gather and traditions are passed down through generations.</p>
+                    <p>Every morning, we serve <strong>alh-moo-SAHL</strong> (breakfast) prepared with the same love and care that Filipino families have cherished for centuries.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
+    <!-- Features Section -->
+    <section class="features">
         <div class="container">
-            <div class="section-title">
-                <h2>About <span class="highlight">Us</span></h2>
-                <p class="text-start lh-lg"><b>TakeOff by Kuya Randy</b> isn’t just a food spot — it’s a tribute to home, heritage, and heart.
-
-Born from a deep love for Filipino flavors and a desire to share them with the world, TakeOff brings you the comfort of Authentic Pinoy Breakfast the way it’s meant to be enjoyed — hearty, soulful, and made with care. From the silogs you grew up with to dishes inspired by family recipes passed down through generations, we serve food that feels like home.
-
-Our signature? Kah-pahm-PAH-gahn homecooking — a style that celebrates slow mornings, thoughtful preparation, and the rich culinary traditions of the Philippines. It’s the kind of meal that makes you pause, savor, and smile.
-
-Whether you’re grabbing a quick breakfast before work, hosting a family gathering, or just craving that familiar taste of lutong bahay, you’re always welcome at TakeOff.
-
-This is more than food — it’s our story, your comfort, and a shared love for everything proudly Pinoy.</p>
+            <h2>What Makes Us Special</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="assets/images/house-chimney-heart.svg" width="64"/>
+                    </div>
+                    <h3>Kah-pahm-PAH-gahn</h3>
+                    <div class="pronunciation">Home Cooking</div>
+                    <p>We bring the warmth of Filipino home cooking to every dish, using traditional recipes passed down through generations of Filipino families.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="assets/images/bacon-egg.svg" width="64"/>
+                    </div>
+                    <h3>Alh-moo-SAHL</h3>
+                    <div class="pronunciation">Authentic Breakfast</div>
+                    <p>Start your day with traditional Filipino breakfast favorites, prepared fresh daily using time-honored cooking methods and authentic ingredients.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="assets/images/flag.svg" width="64"/>
+                    </div>
+                    <h3>Pinoy Pride</h3>
+                    <div class="pronunciation">Filipino Heritage</div>
+                    <p>We take pride in showcasing the diverse flavors of the Philippines, bringing authentic Pinoy breakfast culture to every meal we serve.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Story Section -->
+    <section class="story-section">
         <div class="container">
-            <p class="footer-brand">&copy; 2025 <strong>TakeOff by Kuya Randy</strong></p>
-            <p class="footer-tagline">Crafted with ❤️ for fans of Authentic Pinoy Breakfast and kah-pahm-PAH-gahn homecooking 🍳🇵🇭</p>
-            <div class="social-links">
-            <a href="tel:+16508922003" title="Call Us">📞</a>
-            <a href="https://m.me/randy.felix.758" target="_blank" title="Message Us on Messenger">💬</a>
-            <a href="https://instagram.com/takeoffbykuyarandy" target="_blank" title="Follow on Instagram">📷</a>
+            <div class="story-content">
+                <h2>Our Journey</h2>
+                <p>Founded with a passion for sharing the <span class="highlight">authentic flavors of the Philippines</span>, Foodie Restaurant began as a dream to bring traditional Filipino breakfast culture to food lovers everywhere.</p>
+                <p>Our kitchen is where <span class="highlight">Kah-pahm-PAH-gahn</span> (homecooking) comes alive. Every morning, we prepare fresh <span class="highlight">alh-moo-SAHL</span> (breakfast) using recipes that have been treasured in Filipino households for generations.</p>
+                <p>From our family to yours, we invite you to experience the warmth, flavor, and tradition of authentic Pinoy breakfast. Join us for a meal that's more than just food – it's a celebration of Filipino culture and hospitality.</p>
             </div>
         </div>
-    </footer>
-
-    <script>
-        // Form submission handler
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const name = formData.get('name');
-            
-            // Show success message
-            alert(`Thank you, ${name}! Your message has been sent. We'll get back to you soon!`);
-            
-            // Reset form
-            this.reset();
-        });
-
-        // Add smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe contact items
-        document.querySelectorAll('.contact-item, .contact-form').forEach(item => {
-            item.style.opacity = '0';
-            item.style.transform = 'translateY(30px)';
-            item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(item);
-        });
-    </script>
+    </section>
 </body>
 </html>
