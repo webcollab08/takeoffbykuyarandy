@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TakeOff-AboutUs</title>
+    <title>TakeOff-About</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -18,9 +18,15 @@
     <link rel="apple-touch-icon" href="assets/images/ico/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="assets/images/ico/android-chrome-192x192.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="assets/images/ico/android-chrome-512x512.png" />
-    <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/styler.css" />
 </head>
 <body>
+    <!-- Background Decorations -->
+    <div class="bg-decoration leaf-1">🌿</div>
+    <div class="bg-decoration leaf-2">🌿</div>
+    <div class="bg-decoration tomato-1">🍅</div>
+    <div class="bg-decoration onion-1">🧅</div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -58,15 +64,18 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>About Our Story</h1>
-                <p>Bringing authentic Filipino breakfast traditions to your table</p>
+    <section class="hero-section" id="menu">
+        <div class="container pt-4">
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-12">
+                    <!-- <div class="hero-subtitle">About Our Story</div> -->
+                    <h1 class="hero-title"><span class="logotext">About</span><span style="color: var(--primary-color);"> Our Story</span></h1>
+                    <p class="hero-description">
+                        Bringing authentic Filipino breakfast traditions to your table.</span>
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="decorative-element leaf1">🌿</div>
-        <div class="decorative-element leaf2">🍃</div>
     </section>
 
     <!-- About Section -->
@@ -134,5 +143,123 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Footer Information Section -->
+        <section class="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 mb-4">
+                        <div class="brand-logo">
+                            <div class="brand-logo-icon">
+                                <img src="assets/images/logo.png" width="32"/>
+                            </div>
+                            <h4 class="brand-name">Takeoff</h4>
+                        </div>
+                        <p class="brand-description">Experience authentic Filipino breakfast and comfort food. <br>Family-owned restaurant serving traditional recipes with love since 2025.</p>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/takeoffbykuyarandy" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://m.me/randy.felix.758" target="_blank"><i class="bi bi-messenger"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-4 footer-section">
+                        <h5>About Us</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Terms and Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 footer-section">
+                        <h5>Get in Touch</h5>
+                        <div class="contact-info">
+                            <p>
+                                <i class="bi bi-messenger"></i>
+                                m.me/randy.felix.758
+                            </p>
+                            <p>
+                                <i class="bi bi-instagram"></i>
+                                instagram.com/takeoffbykuyarandy
+                            </p>
+                            <p>
+                                <i class="bi bi-telephone"></i>
+                                +1 (650) 892-2003
+                            </p>
+                            <p>
+                                <i class="bi bi-geo-alt"></i>
+                                33 Visitacion Ave. Brisbane CA. 94005
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="footer-bottom-links">
+                            <a href="#">Terms and Condition</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <span class="copyright">All copyright (C) 2025 Reserved</span>
+                        <span class="payment-icons ms-3">
+                            <img src="assets/images/cc-visa.svg" title="VISA" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Category tab functionality
+        const tabs = document.querySelectorAll('.tab');
+        const breakfastItems = document.querySelectorAll('.breakfast-item');
+        const drinkItems = document.querySelectorAll('.drink-item');
+        
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                tabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Show/hide items based on category
+                const category = this.textContent.toLowerCase();
+                
+                if (category === 'breakfast') {
+                    breakfastItems.forEach(item => item.style.display = 'block');
+                    drinkItems.forEach(item => item.style.display = 'none');
+                } else if (category === 'drink') {
+                    breakfastItems.forEach(item => item.style.display = 'none');
+                    drinkItems.forEach(item => item.style.display = 'block');
+                } else {
+                    // For other categories (lunch, dinner, snacks), hide all items for now
+                    breakfastItems.forEach(item => item.style.display = 'none');
+                    drinkItems.forEach(item => item.style.display = 'none');
+                }
+            });
+        });
+
+        // Menu card hover effects
+        const menuCards = document.querySelectorAll('.menu-card');
+        menuCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
 </body>
 </html>

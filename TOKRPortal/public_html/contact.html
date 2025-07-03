@@ -18,9 +18,15 @@
     <link rel="apple-touch-icon" href="assets/images/ico/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="assets/images/ico/android-chrome-192x192.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="assets/images/ico/android-chrome-512x512.png" />
-    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/styler.css" />
 </head>
 <body>
+    <!-- Background Decorations -->
+    <div class="bg-decoration leaf-1">🌿</div>
+    <div class="bg-decoration leaf-2">🌿</div>
+    <div class="bg-decoration tomato-1">🍅</div>
+    <div class="bg-decoration onion-1">🧅</div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -58,20 +64,20 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Get in Touch</h1>
-                <p>Ready to experience the best Filipino cuisine? <br>
-                    Contact us today to place your order, make a reservation, or just say hello!
-                </p>
+    <section class="hero-section" id="menu">
+        <div class="container pt-4">
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-12">
+                    <h1 class="hero-title"><span class="logotext">Get </span><span style="color: var(--primary-color);"> in Touch</span></h1>
+                    <p class="hero-description">
+                        Ready to experience <span class="fw-bold">the best Filipino cuisine?</span> Contact us today to place your order, make a reservation, or just say hello!
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="decorative-element leaf1">🌿</div>
-        <div class="decorative-element leaf2">🍃</div>
     </section>
 
-    <main class="main-content">
+    <section class="about-section contactpg">
         <div class="container">
             <div class="contact-section">
                 <div class="contact-info">
@@ -138,8 +144,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    
 
-            <div class="quick-actions">
+    <section class="features contactpg">
+        <div class="container">
+             <div class="quick-actions">
                 <div class="action-card">
                     <div class="icon">
                         <img src="assets/images/delivery-man.svg" width="64"/>
@@ -166,11 +177,14 @@
                     <p>Planning a party or event? Let us cater your special occasion with delicious Filipino food</p>
                     <a href="https://m.me/randy.felix.758" target="_blank" class="action-btn">Message Us</a>
                 </div>
-            </div>
+            </div>            
+        </div>
+    </section>
 
-            <div class="hours-section">
-                <h2>Business Hours
-                </h2>
+    <section class="story-section contactpg">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="mb-4">Business Hours</h2>
                 <div class="hours-grid">
                     <div class="day-item">
                         <span class="day">Monday</span>
@@ -203,7 +217,84 @@
                 </div>
             </div>
         </div>
-    </main>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Footer Information Section -->
+        <section class="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 mb-4">
+                        <div class="brand-logo">
+                            <div class="brand-logo-icon">
+                                <img src="assets/images/logo.png" width="32"/>
+                            </div>
+                            <h4 class="brand-name">Takeoff</h4>
+                        </div>
+                        <p class="brand-description">Experience authentic Filipino breakfast and comfort food. <br>Family-owned restaurant serving traditional recipes with love since 2025.</p>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/takeoffbykuyarandy" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://m.me/randy.felix.758" target="_blank"><i class="bi bi-messenger"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-4 footer-section">
+                        <h5>About Us</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Terms and Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 footer-section">
+                        <h5>Get in Touch</h5>
+                        <div class="contact-info">
+                            <p>
+                                <i class="bi bi-messenger"></i>
+                                m.me/randy.felix.758
+                            </p>
+                            <p>
+                                <i class="bi bi-instagram"></i>
+                                instagram.com/takeoffbykuyarandy
+                            </p>
+                            <p>
+                                <i class="bi bi-telephone"></i>
+                                +1 (650) 892-2003
+                            </p>
+                            <p>
+                                <i class="bi bi-geo-alt"></i>
+                                33 Visitacion Ave. Brisbane CA. 94005
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="footer-bottom-links">
+                            <a href="#">Terms and Condition</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <span class="copyright">All copyright (C) 2025 Reserved</span>
+                        <span class="payment-icons ms-3">
+                            <img src="assets/images/cc-visa.svg" title="VISA" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Add click effects to buttons
